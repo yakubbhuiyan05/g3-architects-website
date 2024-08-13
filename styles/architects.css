@@ -14,6 +14,15 @@ body {
 .display-flex{
     display: flex;
 }
+.btn-primary{
+    background-color: #FF900E;
+    color: #FFFFFF;
+    padding: 20px 25px;
+    font-weight: 600;
+    font-size: 1.25rem;
+    border-radius: 8px;   
+    border: none; 
+}
 /* dark-02 */
 .text-grey{
     color: #424242;
@@ -51,4 +60,26 @@ body {
 .menu, .banner{
     max-width: 1440px;
     margin: 0 auto;
+}
+
+/* Banner related styles */
+.banner-content{
+    max-width: 862px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.banner-title{
+    font-weight: 700;
+    font-size: 4rem;
+}
+.banner-image img{
+    width: 100%;
+
+}
+/* responsive media query */
+@media screen and (max-width: 576px) {
+    .nav-bar, .nav-links {
+        flex-direction: column;
+    }
 }
