@@ -1,9 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
-/* *{
-    margin: 0;
+*{
+    /* margin: 0; */
     padding: 0;
     box-sizing: border-box; 
-} */
+}
+    
+
 body {
   font-family: "Work Sans", sans-serif;
   font-optical-sizing: auto;
@@ -21,7 +23,15 @@ body {
     font-weight: 600;
     font-size: 1.25rem;
     border-radius: 8px;   
-    border: none; 
+    border: none;
+    margin-top: 32px; 
+}
+main > section{
+    margin-top: 130px;
+}
+/* dark-01 */
+.chinese-black{
+    color: #131313;
 }
 /* dark-02 */
 .text-grey{
@@ -30,6 +40,10 @@ body {
 /* dark-03 */
 .text-light-grey{
     color: #727272;
+}
+/* dark-04 */
+.dark-orange{
+    color: #FF900E;
 }
 /* bg-color */
 .bg-light{
@@ -77,9 +91,44 @@ body {
     width: 100%;
 
 }
+/* team and features related styles */
+.teams{
+    align-items: center;
+    justify-content: center;
+    /* margin: 0 auto; */
+    /* padding:301px; */
+}
+.team-image-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+.our-features{
+    margin-left: 76px;
+    /* width: 537px; */
+}
+.features-title{
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+#quick-list{
+    font-weight: 500;
+}
+.feature-description{
+    font-size: 16px;
+    font-weight: 400;
+}
 /* responsive media query */
 @media screen and (max-width: 576px) {
-    .nav-bar, .nav-links {
+    .nav-bar, 
+    .nav-links,
+    .teams {
         flex-direction: column;
+    }
+    .team-image-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .our-features{
+        margin-left: 0;
     }
 }
