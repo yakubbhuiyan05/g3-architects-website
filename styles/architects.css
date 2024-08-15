@@ -158,6 +158,7 @@ main > section{
     font-weight: 600;
     margin-top: 10px;
 }
+/* sponsors styles */
 
 
 
@@ -180,6 +181,10 @@ main > section{
     }
     .team-image-container, .fact-container{
         grid-template-columns: repeat(1, 1fr);
+    }
+    .fact-container{
+        justify-items: center;
+        gap: 24px;
     }
     .our-features{
         margin-left: 20px;
